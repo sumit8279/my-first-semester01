@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sumit | Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #111827;
+            color: #f3f4f6;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2937;
+            padding: 32px 20px;
+            text-align: center;
+            border-bottom: 3px solid #c9a45c;
+        }
+
+        h1 {
+            margin: 0 0 18px;
+            color: #e7c77a;
+            font-family: Georgia, serif;
+            font-size: 2.6rem;
+        }
+
+        nav {
+            margin-top: 12px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 8px;
+            padding: 8px 14px;
+            color: #f3f4f6;
+            text-decoration: none;
+            border: 1px solid #6b5a35;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #c9a45c;
+            color: #111827;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 32px auto;
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        main > div {
+            flex: 2;
+        }
+
+        section, article {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            border-top: 3px solid #c9a45c;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 22px;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        h2, h3 {
+            margin-top: 0;
+            color: #e7c77a;
+            font-family: Georgia, serif;
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #c9a45c;
+            object-fit: cover;
+        }
+
+        #course ul {
+            padding-left: 20px;
+        }
+
+        #about p, #blog p, #course li, dd {
+            color: #d1d5db;
+        }
+
+        #course li {
+            margin: 8px 0;
+        }
+
+        dt {
+            color: #e7c77a;
+            font-weight: bold;
+        }
+
+        dd {
+            margin: 4px 0 14px;
+        }
+
+        footer {
+            background-color: #1f2937;
+            text-align: center;
+            padding: 16px;
+            color: #e7c77a;
+            border-top: 1px solid #c9a45c;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                flex-direction: column;
+            }
+
+            main > div, aside {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sumit Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#course">My Course</a>
+            <a href="#blog">Blog</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="./invertis.jpg" alt="Portfolio profile photo">
+                <p>Hi, I'm Sumit—a first-year student learning web development and creating simple, useful websites.</p>
+            </section>
+
+            <article id="blog">
+                <h2>My First Blog</h2>
+                <p>My first webpage sparked my interest in design. I'm excited to keep learning and build more.</p>
+            </article>
+        </div>
+
+        <aside>
+            <section id="course">
+                <h2>My Course</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Data Structures &amp; Algorithms</li>
+                    <li>Tools: VS Code and Git</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Quick Facts</h3>
+                <dl>
+                    <dt>Hobby</dt>
+                    <dd>Drawing and exploring web design</dd>
+                </dl>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>Made by Sumit</p>
+    </footer>
+</body>
+
+</html>

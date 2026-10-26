@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit's Resume</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #f2f4f7;
+            color: #263238;
+            font-family: Arial, sans-serif;
+        }
+
+        .resume {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid #d9dee5;
+        }
+
+        header {
+            padding-bottom: 18px;
+            border-bottom: 2px solid #b08d45;
+        }
+
+        h1, h2 {
+            color: #24364b;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #596579;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 22px;
+        }
+
+        .section {
+            padding: 18px;
+            background-color: #f8f7f3;
+            border: 1px solid #e3dccb;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            color: #927333;
+        }
+
+        .contact {
+            margin-top: 22px;
+            padding-top: 15px;
+            border-top: 1px solid #d9dee5;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .resume {
+                padding: 20px;
+            }
+
+            .sections {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="resume">
+        <header>
+            <h1>Sumit</h1>
+            <p>B.tech First-Year Student</p>
+            <p>I enjoy coding and race, and I'm learning to build websites.</p>
+        </header>
+
+        <div class="sections">
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <p>HTML, Git, and typing</p>
+                <p>Currently learning CSS and JavaScript</p>
+            </section>
+
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <p>12th — NIC</p>
+                <p>B.tech — Invertis University (ongoing)</p>
+            </section>
+        </div>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: sumit@example.com</p>
+        </section>
+    </main>
+</body>
+
+</html>

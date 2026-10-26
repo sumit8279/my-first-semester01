@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Coding Club registration page">
+    <title>Coding Club | Join Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #f3f1ec;
+            color: #293449;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 28px;
+            background-color: #17243a;
+            color: white;
+            border-bottom: 4px solid #c49a4a;
+        }
+
+        nav {
+            margin-bottom: 18px;
+        }
+
+        nav a {
+            margin-right: 18px;
+            color: #ead39f;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            font-family: Georgia, serif;
+        }
+
+        h1 {
+            margin: 0;
+            color: #f0d48e;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-bottom: 0;
+            color: #e0e4ea;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 22px;
+            margin-top: 24px;
+            align-items: start;
+        }
+
+        .card {
+            padding: 24px;
+            background-color: white;
+            border: 1px solid #dedbd3;
+            border-top: 3px solid #c49a4a;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #17243a;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        caption {
+            margin-bottom: 8px;
+            color: #667085;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #e2e5e9;
+        }
+
+        th {
+            background-color: #17243a;
+            color: white;
+        }
+
+        tfoot td {
+            color: #667085;
+            font-weight: bold;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .form-field {
+            min-width: 0;
+        }
+
+        .form-field label,
+        legend {
+            display: block;
+            margin-bottom: 5px;
+            color: #293449;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd0d8;
+            background-color: white;
+            font: inherit;
+        }
+
+        fieldset {
+            min-width: 0;
+            padding: 10px;
+            border: 1px solid #cbd0d8;
+        }
+
+        fieldset label {
+            display: inline;
+            margin-right: 12px;
+        }
+
+        .wide {
+            grid-column: 1 / -1;
+        }
+
+        button {
+            padding: 11px 20px;
+            background-color: #17243a;
+            color: white;
+            border: 2px solid #17243a;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c49a4a;
+            border-color: #c49a4a;
+            color: #17243a;
+        }
+
+        @media (max-width: 750px) {
+            body {
+                padding: 16px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+
+            .wide {
+                grid-column: auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="#events">Events</a>
+                <a href="#register">Join the Club</a>
+            </nav>
+            <h1>Coding Club</h1>
+            <p>Learn new skills, build projects, and create something great together.</p>
+        </header>
+
+        <div class="content-grid">
+            <section class="card" id="events">
+                <h2>Upcoming Events</h2>
+                <div class="table-wrap">
+                    <table>
+                        <caption>Explore what's coming up at the club.</caption>
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                                <th>Venue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hackathon</td>
+                                <td>2 Nov</td>
+                                <td>Seminar Hall</td>
+                            </tr>
+                            <tr>
+                                <td>HTML Workshop</td>
+                                <td>12 Nov</td>
+                                <td>Lab 6</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Two events are planned</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card" id="register">
+                <h2>Become a Member</h2>
+                <form action="#" method="post">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="pass">Create a password</label>
+                        <input type="password" id="pass" name="pass" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="dob">Date of birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-field">
+                        <label for="branch">Branch</label>
+                        <select id="branch" name="branch">
+                            <option value="BCA">BCA</option>
+                            <option value="BTech">B.Tech</option>
+                        </select>
+                    </div>
+                    <fieldset class="form-field">
+                        <legend>Gender</legend>
+                        <input type="radio" name="gender" id="m" value="male">
+                        <label for="m">Male</label>
+                        <input type="radio" name="gender" id="f" value="female">
+                        <label for="f">Female</label>
+                    </fieldset>
+                    <fieldset class="form-field">
+                        <legend>Interests</legend>
+                        <input type="checkbox" id="web" name="interests" value="web">
+                        <label for="web">Web</label>
+                        <input type="checkbox" id="dsa" name="interests" value="dsa">
+                        <label for="dsa">DSA</label>
+                    </fieldset>
+                    <div class="form-field wide">
+                        <label for="msg">What would you like to learn?</label>
+                        <textarea id="msg" name="message" rows="3"></textarea>
+                    </div>
+                    <button class="wide" type="submit">Join the Club</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
